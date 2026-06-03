@@ -1,0 +1,43 @@
+site_name: Chris's Skills Wiki
+site_description: Network Engineering, Automation & Cloud Knowledge Base
+site_author: Chris
+
+theme:
+  name: material
+  palette:
+    scheme: slate          # dark mode — change to 'default' for light
+    primary: teal
+    accent: cyan
+  features:
+    - navigation.tabs        # top-level tabs
+    - navigation.expand    # grouped sidebar
+    - navigation.top         # back-to-top button
+    - search.suggest
+    - search.highlight
+    - content.code.copy      # copy button on code blocks
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - admonition              # nice callout boxes
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Networking:
+    - BGP: networking/bgp.md
+    - MPLS & SR: networking/mpls-sr.md
+    - EVPN: networking/evpn.md
+  - Automation:
+    - Python: automation/python.md
+    - Ansible: automation/ansible.md
+  - Cloud:
+    - GCP: cloud/gcp.md
+  - Security:
+    - Zero Trust: security/zero-trust.md
