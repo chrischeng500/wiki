@@ -11,3 +11,5 @@ BGP uses a well-known decision process (Weight → LOCAL_PREF → ...).
 import paramiko
 ...
 ```
+![](images/bgp_2026-06-04-13-05-23.png)
+![](images/bgp_2026-06-04-13-06-03.png)
